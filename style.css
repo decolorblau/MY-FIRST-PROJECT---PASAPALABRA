@@ -1,0 +1,577 @@
+:root {
+    --blanco: #fff;
+    --oscuro: #212121;
+    --amarillo:#ffc107;
+    --principal:#2d8cff;
+    --fons:#e7e7e7;
+    --seleccio:#f26d21;
+
+    --font-titulo: 'Exo', sans-serif;
+    --font-p: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body .home{
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(#53a3fc,#4989fb);
+    background-size: cover;
+    color:var(--fons);
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+/* pagina presentació*/
+header{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 21rem 7rem 11rem 7rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.inicio h1 {
+    color: var(--fons);
+    text-align: center;
+    font-size: 6.5em;
+    font-family: var(--font-titulo);
+    margin: 0;
+}
+.inicio p{
+    font-weight: 600;
+}
+
+.inicio{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:var(--font-p);
+    text-align: center;
+}
+.introduccion{
+    font-size: 1.5rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    border-color:transparent;
+    width: 40rem;
+}
+
+.prompt{
+    padding-bottom: 0.5em;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.input{
+    width: 100%;
+    border:0;
+    background-color: transparent;
+    color:var(--fons);
+    border-bottom: var(--fons);
+    margin: 1rem;
+    outline: none;
+    line-height: 1.9;
+    border-bottom: 1.5px solid #fff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+.input::placeholder {
+    color: var(--fons);
+}
+
+.button{
+    margin:0.3rem;
+    padding: 0.5rem 1.6rem;
+    border:0;
+    border-radius: 0.5rem;
+    background-color: var(--fons);
+    box-shadow:0.4rem 0.4rem 0.2rem 0.1rem rgba(31, 31, 31, 0.3);
+    color:var(--principal);
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--seleccio);
+    color:var(--fons);
+}
+
+/* pagina joc */
+
+
+body{
+    font-size: 1.5rem;
+    background: var(--fons);
+    color:var(--principal);
+    box-sizing: border-box;
+    font-family: var(--font-p);
+
+}
+
+.headerJuego{
+    background-color: var(--blanco);;
+    padding: 0.5rem;
+    margin:0;
+    font-size: 1.5rem;
+}
+.titulo p{
+    font-family: var(--font-p);
+    font-size: 1rem;
+    color:var(--principal);
+    font-weight: 700;
+
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0;
+    color:var(--principal);
+    font-family: var(--font-p);
+    font-size: 1.5rem;
+    background-color: var(--blanco);
+    text-align: center;
+    box-shadow: 0 1px 0 0 rgb(0, 0, 0, 0.1);
+}
+
+.barra div{
+    padding: 1rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 33%;
+    overflow: visible;
+    font-size: 1.3rem;
+}
+
+
+.marcador{
+    color: rgb(0, 0, 0, 0.3);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.tiempo{
+    margin:0.5rem 33%;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--principal);
+    color: var(--fons);
+    box-shadow: 2px 2px 0 0 rgb(0, 0, 0, 0.2);
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+}
+.tiempo p{
+    color:var(--fons);
+    padding-bottom: 0.8rem;
+    font-size:2.3rem;
+    font-weight: 700;
+}
+
+.finalTiempo{
+    background-color: var(--seleccio);
+}
+.finalTiempo2{
+    background-color: rgb(194, 1, 1);
+}
+
+div .aciertos{
+    text-align: right;
+}
+
+.tablero{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 4rem 2rem 2rem;
+}
+
+
+.preguntas{
+    box-sizing: border-box;
+    background:linear-gradient(#53a3fc,#4989fb);
+    color: var(--fons);
+    font-family: var(--font-p);
+    width: 40%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 25px 20px 0px;
+    box-shadow:10px 8px 3px 1px rgba(0,0,0,0.3) ;
+    border-radius: 30px;
+    padding:1.5rem;
+}
+
+.prompt h5{
+    padding-bottom: 1rem;
+}
+
+.preguntasRosco{
+    margin: 3.5rem auto 1rem;
+}
+
+.buttonReverse{
+    margin:3rem 1rem 6rem 1rem;
+    padding: 0.3rem 1.6rem;
+    border: 1.5px solid var(--fons);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    box-shadow:0.2rem 0.2rem 0.1rem 0.1rem rgba(31, 31, 31, 0.1);
+    color:var(--fons);
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.buttonReverse:hover{
+    border: 1.5px solid var(--seleccio);
+    background-color: var(--fons);
+    color:var(--seleccio);
+}
+
+.buttonStart{
+    margin:2rem 1rem 3rem 1rem;
+    padding: 0.3rem 1.6rem;
+    color:var(--principal);
+    text-align: center;
+}
+
+
+
+.rosco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+}
+
+.circulo{
+    width: 50rem;
+    height: 50rem;
+   fill:none;
+   /*overflow: hidden;*/
+   background-color: transparent;
+   border-radius: 50%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin:1rem auto;
+   margin-left: 3rem;
+}
+
+
+.letra-rosco{
+    color: var(--fons);
+    font-family: var(--font-p);
+    height: 4.3rem;
+    width: 4.3rem;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: var(--principal);
+    display: flex;
+    box-shadow:0.4rem 0.3rem 0.2rem 0.02rem rgba(0,0,0,0.3) ;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    border: none;
+    font-size: 2.5rem;
+}
+
+
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    font-size: 20rem;
+    text-shadow: 0.6rem 0.4rem 0.3rem  rgba(0,0,0,0.3);
+}
+
+.letraMedio {
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-weight: 800;
+    font-size: 7.3rem;
+    text-shadow: 0.6rem 0.6rem 0.2rem  rgba(0,0,0,0.5);
+    order: -1;
+    color:var(--blanco);
+
+}
+
+.center:hover{
+    font-size: 30rem;
+    display: flex;
+    order: -1;
+    color:var(--principal);
+    text-shadow: 0.8rem 0.8rem 0.2rem  rgba(242,109,33,0.6);
+}
+
+.letraMedio:hover{
+    font-size: 8.3rem;
+    display: flex;
+    order: -1;
+    color:var(--blanco);
+    text-shadow: 0.8rem 0.8rem 0.2rem  rgba(242,109,33,0.6);
+}
+
+.letrasCentral{
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    font-size: 8.3rem;
+    display: flex;
+    order: -1;
+    color:var(--blanco);
+    text-shadow: 0.8rem 0.8rem 0.2rem  rgba(242,109,33,0.6);
+}
+
+
+.circuloCentro {
+    width: 35rem;
+    height: 35rem;
+   background:linear-gradient(#53a3fc,#4989fb);
+   border-radius: 50%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin:1rem auto;
+    box-shadow:0.4rem 0.3rem 0.2rem 0.02rem rgba(0,0,0,0.3) ;
+}
+
+.joc {
+    width: 35rem;
+    height: 35rem;
+    border: 2px solid var(--principal);
+   background:transparent;
+   border-radius: 50%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin:1rem auto;
+}
+
+.instrucciones {
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.resultat{
+    margin-top: 2rem;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: var(--font-p);
+}
+
+.clasificacion{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 8rem 0 3rem;
+    font-weight: 800;
+    position: relative;
+    font-size: 1.8rem;
+}
+
+
+.ranking {
+    border: 2px solid var(--fons);
+    width: 65rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height:2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 1.4rem;
+}
+.ranking h3{
+    text-decoration: underline;
+    line-height: 2.5rem;
+}
+
+.top10{
+    margin-top: 1rem;
+}
+
+.final {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+/*distribucion letras dentro del rosco*/
+.deg270{
+    transform: rotate(270deg) translate(22rem) rotate(-270deg);
+}
+.deg283{
+    transform: rotate(283.33deg) translate(22rem) rotate(-283.33deg);
+}
+.deg296{
+    transform: rotate(296.67deg) translate(22rem) rotate(-296.67deg);
+}
+.deg310{
+    transform: rotate(310deg) translate(22rem) rotate(-310deg);
+}
+.deg323{
+    transform: rotate(323.33deg) translate(22rem) rotate(-323.33deg);
+}
+.deg336{
+    transform: rotate(336.67deg) translate(22rem) rotate(-336.67deg);
+}
+.deg350{
+    transform: rotate(350deg) translate(22rem) rotate(-350deg);
+}
+.deg3{
+    transform: rotate(3.33deg) translate(22rem) rotate(-3.33deg);
+}
+.deg16{
+    transform: rotate(16.67deg) translate(22rem) rotate(-16.67deg);
+}
+.deg30{
+    transform: rotate(30deg) translate(22rem) rotate(-30deg);
+}
+.deg43{
+    transform: rotate(43.33deg) translate(22rem) rotate(-43.33deg);
+}
+.deg56{
+    transform: rotate(56.67deg) translate(22rem) rotate(-56.67deg);
+}
+.deg70{
+    transform: rotate(70deg) translate(22rem) rotate(-70deg);
+}
+.deg83{
+    transform: rotate(83.33deg) translate(22rem) rotate(-83.33deg);
+}
+.deg96{
+    transform: rotate(96.67deg) translate(22rem) rotate(-96.67deg);
+}
+.deg110{
+    transform: rotate(110deg) translate(22rem) rotate(-110deg);
+}
+.deg123{
+    transform: rotate(123.33deg) translate(22rem) rotate(-123.33deg);
+}
+.deg136{
+    transform: rotate(136.67deg) translate(22rem) rotate(-136.67deg);
+}
+.deg150{
+    transform: rotate(150deg) translate(22rem) rotate(-150deg);
+}
+.deg163{
+    transform: rotate(163.33deg) translate(22rem) rotate(-163.33deg);
+}
+.deg176{
+    transform: rotate(176.67deg) translate(22rem) rotate(-176.67deg);
+}
+.deg190{
+    transform: rotate(190deg) translate(22rem) rotate(-190deg);
+}
+.deg203{
+    transform: rotate(203.33deg) translate(22rem) rotate(-203.33deg);
+}
+.deg216{
+    transform: rotate(216.67deg) translate(22rem) rotate(-216.67deg);
+}
+.deg230{
+    transform: rotate(230deg) translate(22rem) rotate(-230deg);
+}
+.deg243{
+    transform: rotate(243.33deg) translate(22rem) rotate(-243.33deg);
+}
+.deg256{
+    transform: rotate(256.67deg) translate(22rem) rotate(-256.67deg);
+}
+
+
+
+/*estilos que cambian con javascript*/
+
+.acierto{
+    background-color: #26d167;
+}
+
+.fallo{
+    background-color: #c00707;
+}
+
+.seleccion{
+    box-sizing: border-box;
+        background-color: var(--seleccio);
+        color:var(--fons);
+        box-shadow:0.4rem 0.3rem 0.2rem 0.02rem rgba(45,140,255,0.3) ;
+
+}
+
+.be{
+    color: #26d167;
+}
+
+.mal{
+    color: #c00707;
+}
+
+.deshabilitar{
+    background-color: rgb(250, 250, 250, 0.5);
+}
+
+.deshabilitar:hover{
+    background-color: rgb(250, 250, 250, 0.5);
+    color:var(--principal);
+}
