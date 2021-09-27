@@ -63,6 +63,6 @@ window.onkeydown = presionarTecla;
 function usuario (){
     sessionStorage.setItem ('nombre', nombreJugador);
     sessionStorage.setItem ('clasificacion', JSON.stringify(clasificacion))
-    window.open('file:///D:/CLAUDIA/SKYLAB/PRECURSO/EXERCICIS/10-PASAPALABRA%20DOM/html/pasapalabra.html','_self')
+    window.open('https://pedantic-goodall-faf5fb.netlify.app/html/pasapalabra.html?','_self')
 }
 
