@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500;600;700;800;900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="game">
+
+    <nav class ="barra">
+        <div class="aciertos">
+            <h3>Aciertos</h3>
+            <p class="marcador" id="aciertos">0</p>
+        </div>
+        <div class="tiempo">
+            <h3>Tiempo</h3>
+            <p class="marcador" id="tiempo">300</p>
+        </div>
+        <div class="errores">
+            <h3> Errores</h3>
+            <p class="marcador" id="errores">0</p>
+        </div>
+    </nav>
+
+    
+    <main class="tablero">
+        <div class=rosco>
+            <div class="circulo">
+            <ul>
+                <div class="joc ">
+                    <p class="center" id="letter">A</p>
+                </div>
+                <li class ="letra-rosco deg270">A</li>
+                <li class ="letra-rosco deg283">B</li>
+                <li class ="letra-rosco deg296">C</li>
+                <li class ="letra-rosco deg310">D</li>
+                <li class ="letra-rosco deg323">E</li>
+                <li class ="letra-rosco deg336">F</li>
+                <li class ="letra-rosco deg350">G</li>
+                <li class ="letra-rosco deg3">H</li>
+                <li class ="letra-rosco deg16">I</li>
+                <li class ="letra-rosco deg30">J</li>
+                <li class ="letra-rosco deg43">K</li>
+                <li class ="letra-rosco deg56">L</li>
+                <li class ="letra-rosco deg70">M</li>
+                <li class ="letra-rosco deg83">N</li>
+                <li class ="letra-rosco deg96">Ñ</li>
+                <li class ="letra-rosco deg110">O</li>
+                <li class ="letra-rosco deg123">P</li>
+                <li class ="letra-rosco deg136">Q</li>
+                <li class ="letra-rosco deg150">R</li>
+                <li class ="letra-rosco deg163">S</li>
+                <li class ="letra-rosco deg176">T</li>
+                <li class ="letra-rosco deg190">U</li>
+                <li class ="letra-rosco deg203">V</li>
+                <li class ="letra-rosco deg216">W</li>
+                <li class ="letra-rosco deg230">X</li>
+                <li class ="letra-rosco deg243">Y</li>
+                <li class ="letra-rosco deg256">Z</li>
+            </ul>
+            </div>
+        </div>
+        <div class="preguntas">
+         
+            <div class="prompt preguntasRosco">
+                <h5 id="firstLetter">EMPIEZA CON LA LETRA A</h5>
+                <p  id="question">Dicho de una supuesta criatura extraterrestre: Apoderarse de alguien</p>
+            </div>
+            <div >
+                <input class="input" type="text" id="answer" placeholder="Su respuesta" autocomplete="off" autofocus>
+            </div>
+        
+            <div>
+                    <div>
+                        <input type="button" class= "button" id="pasapalabra" value="PASAPALABRA">
+                        <input type="button" class= "button" id="comprobar" value="COMPROBAR">
+                    </div>
+                    <div>
+                        <input type="button" class= "buttonReverse" id="abandonar" value="ABANDONAR PARTIDA">
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer >
+        <div class="resultat">
+        </div>
+    </footer>
+    <script src="../pasapalabra-dom.js"></script>
+
+</body>
+</html>
